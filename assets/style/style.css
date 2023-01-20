@@ -11,7 +11,6 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: black;
-    overflow-x: hidden;
 }
 
 /* start general classes  */
@@ -77,6 +76,10 @@ header nav ul .nav-item a {
 
 
 @media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    
     header .navbar .logo {
         font-size: 2rem;
     }

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Houssni Mohammed</title>
+    <!-- style files -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- main css file   -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- script files -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- main script file -->
+    <script src="./assets/script/app.js" defer></script>
+</head>
+
+<body>
+    <header class="container py-3 py-md-0">
+        <nav class="navbar navbar-expand-lg py-0 justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html" class="text-decoration-none d-block">
+                    <span class="text-capitalize me-1 text-light">el houssni</span>
+                    <span class="logo_name text-capitalize">mohammed</span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="link1 nav-item p-3 pt-0 text-center">
+                        <a href="#about" class="text-capitalize text-decoration-none d-block h-100">about me</a>
+                    </li>
+                    <li class="link2 nav-item p-3 pt-0 text-center">
+                        <a href="#portfolio" class="text-capitalize text-decoration-none d-block h-100">portfolio</a>
+                    </li>
+                    <li class="link3 nav-item p-3 pt-0 text-center">
+                        <a href="#contact" class="text-capitalize text-decoration-none d-block h-100">contact me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero container d-flex align-items-center justify-content-center">
+        <div class="hero_infos text-center">
+            <h1 class="my_name text-capitalize text-light fw-bold mb-0">el houssni mohammed</h1>
+            <p class="my_description text-capitalize fw-light mb-4">a front-end developer</p>
+            <div class="buttons d-flex gap-3 justify-content-center">
+                <a href="#" class="my_btn text-decoration-none">download cv</a>
+                <a href="#portfolio" class="my_btn text-decoration-none">my work</a>
+            </div>
+        </div>
+    </section>
+    <section id="about"
+        class="about container d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
+        <div class="about_image w-50 d-flex justify-content-end">
+            <img src="./assets/imgs/about_image.jpg" class="w-100 h-100 object-fit-cover rounded-2" alt="about image">
+        </div>
+        <div class="about_infos w-50">
+            <h2 class="text-capitalize fw-bold text-light mb-3">about me</h2>
+            <p class="text-light text-capitalize mb-5">hello, <br>
+                my name is <span>mohammed el houssni</span> <br>
+                a front-end developer based on morocco <br>
+                focused on designed and implemented user-friendly interfaces for web and mobile applications <br>
+            </p>
+            <div class="skills">
+                <div class="skill mb-5">
+                    <h5 class="text-light text-uppercase fs-3 mb-4">html</h5>
+                    <div class="progress bg-dark position-relative" data-prog="80"></div>
+                </div>
+                <div class="skill mb-5">
+                    <h5 class="text-light text-uppercase fs-3 mb-4">css</h5>
+                    <div class="progress bg-dark position-relative" data-prog="80"></div>
+                </div>
+                <div class="skill mb-5">
+                    <h5 class="text-light text-uppercase fs-3 mb-4">javascript</h5>
+                    <div class="progress bg-dark position-relative" data-prog="70"></div>
+                </div>
+                <div class="skill mb-5">
+                    <h5 class="text-light text-uppercase fs-3 mb-4">bootstrap</h5>
+                    <div class="progress bg-dark position-relative" data-prog="60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hire_me position-relative d-flex align-items-center">
+        <img src="./assets/imgs/hire-me-bg.jpg" class="w-100 object-fit-cover" alt="">
+        <div class="hire_me_text position-absolute text-light text-center text-capitalize">
+            <p class="fs-4">have any project in mind?</p>
+            <p class="fs-2">I'm Available for Freelancing</p>
+            <div><a href="#contact" class="my_btn d-block mx-auto text-decoration-none">hire me!</a></div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio container">
+        <h2 class="text-center text-capitalize text-light mb-5">portfolio</h2>
+        <div class="projects d-flex justify-content-center row gap-4 mb-5">
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/portfolio-multipurpose.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">portfolio multipurpose</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/portfolio-multipurpose/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/portfolio-multipurpose" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/travel-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">travel template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/travel-template/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/travel-template" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/gabooo-ecommerce-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">gabooo E-commerce template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/gabooo-templace/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/gabooo-templace" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/astro-hosting-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">astro hosting template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/astro-template/index.html" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/astro-template" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/dashboard-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">dashboard template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/template-4-dashboard/index.html" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/template-4-dashboard" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/train-hard-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">train hard template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/train-gard/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/train-gard" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/mint-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">mint template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/mint-template/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/mint-template" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/sport-store.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">sport store</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/sport-store/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/sport-store" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+            <div class="project px-0 position-relative col-11 col-md-5 col-lg-3 overflow-hidden">
+                <img src="./assets/imgs/news-template.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div
+                    class="project_infos position-absolute h-100 w-100 d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="project_name text-light text-capitalize fw-bold fs-2">news template</h3>
+                    <p class="project_technologies text-light text-uppercase fs-4">html / css </p>
+                    <a href="https://elhoussnimed.github.io/news-template/" target="_blank"
+                        class="project_live_preview text-decoration-none text-capitalize text-dark fw-semibold fs-5 mb-3">live
+                        preview</a>
+                    <a href="https://github.com/elhoussnimed/news-template" target="_blank"
+                        class="project_repo text-decoration-none text-capitalize text-dark fw-semibold fs-5">repos
+                        link</a>
+                </div>
+            </div>
+        </div>
+        <div class="show_more_btn"><button class="my_btn mx-auto">show more</button></div>
+    </section>
+    <section id="contact" class="contact container py-5">
+        <h2 class="text-center text-capitalize text-light mb-5">contact</h2>
+        <div class="contact_infos_wrapper d-flex flex-column flex-md-row  gap-2 gap-md-5">
+            <div class="contact_infos mb-3 mb-md-0">
+                <div class="contact_phone d-flex align-items-center mb-5">
+                    <div class="contact_icone rounded-circle me-4">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact_phone_infos">
+                        <p class="mb-0 fs-4 text-light text-capitalize">call me:</p>
+                        <p class="mb-0 fs-4"><a href="tel:+212603090814"
+                                class="text-light text-decoration-none">+212-603-090-814</a></p>
+                    </div>
+                </div>
+                <div class="mail d-flex align-items-center mb-5">
+                    <div class="contact_icone rounded-circle me-4">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact_phone_infos">
+                        <p class="mb-0 fs-4 text-light text-capitalize">email:</p>
+                        <p class="mb-0 fs-4"><a href="mailto:mohammedelhoussni@gmail.com"
+                                class="text-light text-decoration-none">mohammedelhoussni@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact_address d-flex align-items-center mb-5">
+                    <div class="contact_icone rounded-circle me-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact_phone_infos">
+                        <p class="mb-0 fs-4 text-light text-capitalize">address:</p>
+                        <p class="mb-0 fs-4 text-light text-capitalize">city saada Taza , morocco</p>
+                    </div>
+                </div>
+                <p class="text-light text-capitalize mb-3 fs-4">fine me on :</p>
+                <div class="social_media w-75 p-2 rounded-end-pill d-flex justify-content-evenly">
+                    <a href="https://www.facebook.com/med.carpentras" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/ELHOUSSNIMOHAMM" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mohammedelhoussni/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammed-el-houssni-84a97422a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bu%2FR8SkCDQB6kq0gTyqd9Vg%3D%3D"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/elhoussnimed" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact_form">
+                <input type="text" placeholder="name"
+                    class="text-capitalize fs-4 p-4 w-100 rounded-3 mb-5 bg-transparent border-1 border-light text-light">
+                <input type="email" placeholder="email"
+                    class="text-capitalize fs-4 p-4 w-100 rounded-3 mb-5 bg-transparent border-1 border-light text-light">
+                <textarea placeholder="message"
+                    class="text-capitalize fs-4 p-4 w-100 rounded-3 mb-5 bg-transparent border-1 border-light text-light"></textarea>
+                <div class="submit_btn"><button class="my_btn d-block mx-auto mx-md-0"> submit</button></div>
+            </div>
+        </div>
+    </section>
+    <footer class="container py-3 text-center">
+        <p class="text-capitalize fs-4 text-light">copyright &copy; <span class="year">----</span> <span
+                class="coder">mohammed el houssni</span> , all rights reserved</p>
+    </footer>
+    <button class="top_btn text-capitalize border-0 text-light position-fixed p-3 bg-transparent" title="Go To Top"><i
+            class="fa-solid fa-circle-arrow-up"></i></button>
+</body>
+
+</html>
